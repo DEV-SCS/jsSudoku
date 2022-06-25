@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Sudoku</title>
+		<style>
+			#sudoku input {
+				width: 40px;
+				height: 40px;
+				border: 1px solid #929292;
+				margin: 2px;
+				text-align: center;
+			}
+
+			#sudoku tr:nth-child(3n) > * {
+				padding-bottom: 10px;
+			}
+
+			#sudoku tr td:nth-child(3n){
+				padding-right: 8px;
+			}
+
+
+			#sudoku input.red {
+				background: red;
+				color: #fff;
+			}
+
+		</style>
+	</head>
+
+	<body>
+
+		<table id="sudoku">
+		<tbody><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr><tr><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td><td><input type="number" name="c" min="0" maxlength="9" class=""></td></tr></tbody></table>
+		<button type="button" onclick="reload();">Yenile</button>
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script type="text/javascript">
+
+			function inArrayAra(samanlik,igne){
+				for(let gri=0; gri<samanlik.length; gri++){
+					if(samanlik[gri].indexOf(igne)>-1){
+						return gri;
+					}
+				}
+				return -1;
+			}
+			
+
+			let inputindex=0;
+			let numbers=[1,2,3,4,5,6,7,8,9];
+			let grup=[ 
+							[1,2,3,10,11,12,19,20,21],[4,5,6,13,14,15,22,23,24],[7,8,9,16,17,18,25,26,27],
+							[28,29,30,37,38,39,46,47,48],[31,32,33,40,41,42,49,50,51],[34,35,36,43,44,45,52,53,54],
+							[55,56,57,64,65,66,73,74,75],[58,59,60,67,68,69,76,77,78],[61,62,63,70,71,72,79,80,81]
+						];
+
+			$(document).ready(function(){
+				
+				$("#sudoku input").on("change",function(){
+					$("#sudoku input").removeClass("red");
+					let inputindex=0;
+					$("#sudoku input").each(function(){
+						inputindex++;
+						let $thisInput=$(this);
+						$thisInput.addClass("load");
+						let aynilar=[];
+						let adet=0;
+						if($thisInput.val()!=""){
+							$thisInput.parents("tr").find("input:not(.load)").each(function(){
+								var $subInput=$(this);
+								if($subInput.val()==$thisInput.val() && $subInput.val()!="") {
+									$subInput.addClass("red");
+								}
+							});
+							aynilar=[];
+							adet=0;
+					
+							let grp=grup[inArrayAra(grup,(inputindex))];
+							if(grp!=undefined){
+								for(var grpindex=0;grpindex<grp.length;grpindex++){
+									var $subInput=$("#sudoku input").eq(grp[grpindex]-1);
+									if(!$subInput.hasClass("load") && $subInput.val()==$thisInput.val() && $subInput.val()!="") {
+										$subInput.addClass("red");
+									}
+								}
+							
+								
+								let colonindex = $thisInput.parent().index();
+								$("#sudoku tr").each(function(){
+									let $subInput=$(this).find("td").eq(colonindex).find("input:not(.load)");
+									if($subInput.val()==$thisInput.val()){
+										$subInput.addClass("red");
+									}
+								});
+								
+							}
+								
+						}
+						$thisInput.removeClass("load");
+					});
+				});
+				
+				reload();
+			});
+
+			
+			let sudoku = [];
+			function reload(){
+				sudoku=[];
+				$("#sudoku input").val('');
+				for(var i=0; i<grup.length; i++){
+					let notNumb=[];
+					let grupValues=[];
+					for(var x=0; x<grup[i].length; x++){
+						notNumb=[];
+						if(sudoku.length>0){
+							for(var si=(i>=0 && i<3 ? 0 : (i>2 && i<6 ? 3 : (i>5 && i<9 ? 6 : 0))); si<i; si++){
+								let jj=(x>=0 && x<3 ? 0 : (x>2 && x<6 ? 3 : (x>5 && x<9 ? 6 : 0)));
+								for(var j=jj; j<jj+3; j++){
+									if(sudoku.length>si)
+									notNumb.push(sudoku[si][j]);
+								}
+							}
+							if(i>2){
+								for(var il=i; il>0; il-=3 ){
+									var cxc=[[0,3,6],[1,4,7],[2,5,8]];
+									var cxcL=cxc.filter(cxcx=>cxcx.filter(cxcy=>cxcy==x).length>0)[0];
+									for(var cxcf=0; cxcf<cxcL.length; cxcf++){
+										if(sudoku.length>il-3 && il-3>=0)
+										notNumb.push(sudoku[il-3][cxcL[cxcf]]);
+									}
+								}
+							}
+							$.merge(notNumb,grupValues);
+							var rt=myfunctionRnd(numbers,notNumb)[0];
+							grupValues.push(rt);
+						}
+						else{
+							grupValues.push(myfunctionRnd(numbers,grupValues)[0]);
+						}
+					}
+					console.log(i);
+					if(grupValues.filter(gvf => gvf==undefined).length>0){
+						i--;
+						sudoku=sudoku.splice(0,sudoku.length-1);
+					}
+					else{
+						sudoku.push(grupValues);
+					}
+					grupValues=[];
+					if(sudoku.length<9 && i==grup.length-1)
+						i--;
+				}
+				
+				for(var i = 0; i<grup.length; i++){
+					for(var y = 0; y<grup[i].length; y++){
+						if(sudoku.length>i)
+						$("#sudoku input").eq(grup[i][y]-1).val(sudoku[i][y]);
+					}
+				}
+			}
+				
+			
+			function myfunctionRnd(data1,data2=[]){
+			   return data1.filter(x=> data2.filter(y=>y==x).length==0).sort(()=> Math.random() - 0.5);
+			}
+		</script>
+	</body>
+
+</html>

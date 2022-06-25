@@ -66,8 +66,6 @@
 						inputindex++;
 						let $thisInput=$(this);
 						$thisInput.addClass("load");
-						let aynilar=[];
-						let adet=0;
 						if($thisInput.val()!=""){
 							$thisInput.parents("tr").find("input:not(.load)").each(function(){
 								var $subInput=$(this);
@@ -75,8 +73,6 @@
 									$subInput.addClass("red");
 								}
 							});
-							aynilar=[];
-							adet=0;
 					
 							let grp=grup[inArrayAra(grup,(inputindex))];
 							if(grp!=undefined){

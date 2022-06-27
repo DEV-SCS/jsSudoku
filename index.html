@@ -107,6 +107,7 @@
 			let sudoku = [];
 			function reload(){
 				sudoku=[];
+				$("#sudoku input").removeClass("red");
 				let logdata = [false,0];
 				for(var i=0; i<grup.length; i++){
 					let notNumb=[];
@@ -160,7 +161,7 @@
 						}
 				}
 				if(sudoku.length<9)
-					setTimeout(function(){reload();},10);
+					setTimeout(function(){reload();},200);
 			}
 			function animateInputVal(input,val,val2 = 10){
 				setTimeout(function(){
@@ -178,7 +179,7 @@
 							val2=val2+1;
 						animateInputVal(input,val,val2);
 					}
-				},100);
+				},50);
 			}
 			
 			function myfunctionRnd(data1,data2=[]){
